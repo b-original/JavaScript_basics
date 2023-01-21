@@ -5,18 +5,18 @@ console.log('Hello World from console!');
 //alert("Hello, World from alert!");
 
 // Below function is used when you want to print the content to the HTML document.
-//document.write('Hello, World!');
+document.write('Hello, World! from JS file based on script tag placement! :)');
 
-//Since node does not support promt directly
-const prompt=require("prompt-sync")({sigint:true});
-
-// taking kilometers input from the user
-const kilometers = prompt("Enter value in kilometers: ")
+/*In case of same function present in html and in JS HTML will get priority!!!
+	to check we have used Prompt in JS and alert in html!!
+*/
+function myFunction() {
+var x = document.getElementById("valueInKM").value;
 
 // conversion factor
 const factor = 0.621371
 
 // calculate miles
-const miles = kilometers * factor
-
-console.log(`${kilometers} kilometers is equal to ${miles} miles.`);
+const miles = x * factor
+prompt(`${x} kilometers is equal to ${miles} miles.`);
+console.log(`${x} kilometers is equal to ${miles} miles.`);}
