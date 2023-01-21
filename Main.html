@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>Main HTLM Page</h1>
+<script src="basicJS.js"></script>
+<h3>Enter the values in Kilometer: <input type="text" id="valueInKM" ></h3>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+var x = document.getElementById("valueInKM").value;
+// conversion factor
+const factor = 0.621371
+// calculate miles
+const miles = x * factor
+alert(`${x} kilometers is equal to ${miles} miles.`);
+console.log(`${x} kilometers is equal to ${miles} miles.`);}
+</script>
+
+
+</body>
+</html>
