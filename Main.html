@@ -4,20 +4,40 @@
 </head>
 <body>
 
-<h1>Main HTLM Page</h1>
-<script src="basicJS.js"></script>
-<h3>Enter the values in Kilometer: <input type="text" id="valueInKM" ></h3>
-<button onclick="myFunction()">Try it</button>
+<h1>Welcome to  HTLM Page</h1>
+<h5>we have a hidden Welcome message which can be seen in console press Fn key and F12 to see it </h5>
+
+<script src="basicJS.js"></script><br>
+
+<p>Below Element is to show on how function in JS works.
+	Here we will be using example of KM to Miles conversion <br>
+	we will take KMs in input tag and conver that value to miles and
+	show an alart tag with statement.
+</p>
+<h3>Enter the values in Kilometer: <input type="text" id="valueInKM" on="myFunction()"></h3><br>
+<button id="tryIt" onclick="myFunction()">Try it</button>
 
 <script>
+var inputValInKms = document.getElementById("valueInKM");
+inputValInKms.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("tryIt").click();
+  }
+});
 function myFunction() {
-var x = document.getElementById("valueInKM").value;
+
 // conversion factor
 const factor = 0.621371
 // calculate miles
-const miles = x * factor
-alert(`${x} kilometers is equal to ${miles} miles.`);
-console.log(`${x} kilometers is equal to ${miles} miles.`);}
+inputValInKmsValue=inputValInKms.value;
+const miles = inputValInKmsValue * factor
+alert(`${inputValInKmsValue} kilometers is equal to ${miles} miles.`);
+console.log(`${inputValInKmsValue} kilometers is equal to ${miles} miles.`);
+}
 </script>
 
 
