@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<h2>Welcome to Page with Tabs features:</h2>
+<p>Click on the buttons inside the tab menu:</p>
+<p>Here we will use a div element, button element and JS to show data along each tab.</p>
+
+<div class="tab">
+	<button id="button1" onclick="alertFunct('Tab 1')">Tab 1</button>
+	<button id="button2" onclick="alertFunct('Tab 2')">Tab 2</button>
+	<button id="button3" onclick="alertFunct('Tab 3')">Tab 3</button>
+</div>
+
+<script>
+function alertFunct(inputValue){
+	alert(`You have clicked on ${inputValue}.`);
+}
+</script>
+
+</body>
