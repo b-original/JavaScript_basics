@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="calculatorCSS.css"/>
+</head>
+<body style="text-align:center;">
+
+<script type="text/javascript" src=calculatorJS.js>
+
+</script>
+
+<form class="frm" >
+	
+<div class="div">
+	<header>
+	<label id="outputtext">equation to solve :</label>
+	<output id="outputtextValue" rows="1" cols="10"></output>
+	<br>
+	</header>
+</div>
+<div class="div">
+<article>
+<div>
+	<button id="bt1" type="button" class="buttoncls" onclick="printFunct('bt1','1',event)"><h3>1</h3></button>
+	<button id="bt2" type="button" class="buttoncls" onclick="printFunct('bt2','2',event)"><h3>2</h3></button>
+	<button id="bt3" type="button" class="buttoncls" onclick="printFunct('bt3','3',event)"><h3>3</h3></button>
+	<button id="bt4" type="button" class="buttoncls" onclick="printFunct('bt4','4',event)"><h3>4</h3></button>
+	<button id="button1" type="button" class="buttoncls" onclick="printFunct('button1','+',event)">+</button>
+	<br><br>
+</div>
+<div >
+	<button id="bt5" type="button" class="buttoncls" onclick="printFunct('bt5','5',event)"><h3>5</h3></button>
+	<button id="bt6" type="button" class="buttoncls" onclick="printFunct('bt6','6',event)"><h3>6</h3></button>
+	<button id="bt7" type="button" class="buttoncls" onclick="printFunct('bt7','7',event)"><h3>7</h3></button>
+	<button id="bt8" type="button" class="buttoncls" onclick="printFunct('bt8','8',event)"><h3>8</h3></button>
+	<button id="button2" type="button" class="buttoncls" onclick="printFunct('button2','-',event)">-</button>
+	<br><br>
+</div>
+<div >
+	<button id="bt*" type="button" class="buttoncls" onclick="printFunct('bt*','*',event)">*</button>
+	<button id="bt9" type="button" class="buttoncls" onclick="printFunct('bt9','9',event)"><h3>9</h3></button>
+	<button id="bt0" type="button" class="buttoncls" onclick="printFunct('bt0','0',event)"><h3>0</h3></button>
+	<button id="bt/" type="button" class="buttoncls" onclick="printFunct('bt/','DIVISION',event)">/</button>
+	<button id="button3" class="buttoncls" onclick="printtextsubmit()">=</button>
+	<br><br>
+</div>
+</article>
+</div>
+</form>
+
+</body>
