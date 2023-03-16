@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.page {
+	background-color: lightblue;
+}
+</style>
+</head>
+<body id="demo" class="page">
+
+<h2>Color Flipper</h2>
+
+<button type="button" onclick="callToChange()">
+Click me !!!</button>
+
+<script>
+const color={
+
+	1:"RED",
+	2:"GREEN",
+	3:"lightblue",
+	4:"orange",
+	5:"white"
+}
+function callToChange(){
+		let random_no=Math.floor(Math.random() * 6);
+		document.getElementById('demo').style.background=color[random_no];
+		let random_no2=Math.floor(Math.random() * 6);
+		document.getElementById('demo').style.color=color[random_no2];
+		
+	}
+
+</script>
+
+
+</body>
+</html>
