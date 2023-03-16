@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+
+<p>below is the example for changing the content value based on id using below syntext<br>
+document.getElementById("demo").innerHTML = "Hello JavaScript!" -changing text.<br>
+document.getElementById("demo").style.fontSize = "35px" -changing fint size.<br>
+document.getElementById('demo').style.display='none' - hiding display.<br>
+document.getElementById('demo').style.display='block' - displaying the block content.<br>
+third demo is to show 'script' tag usage, here we can see above shown multiple statements can be combined as one and implemented using function<br>
+</p>
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!" '>Click Me!</button>
+
+<button type="button" onclick='document.getElementById("demo").style.fontSize = "35px"'>Click Me to change font !</button>
+
+<p id="demo2">check me to change!</p><br>
+
+<p id="demo3">check this side to change.!</p><br>
+
+<button type="button" onclick='callToChange()'>try me!!!</button><br>
+<script>
+	function callToChange(){
+		document.getElementById("demo3").innerHTML = "Hello JavaScript!" 
+		document.getElementById("demo3").style.fontSize = "35px" 
+		document.getElementById('demo3').style.display='block'
+	}
+</script>
+
+<button type="button" onclick="document.write(5 + 6)">Try it to write the value.</button><br>
+
+</body>
+</html> 
